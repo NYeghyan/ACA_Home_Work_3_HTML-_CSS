@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <header>
+        <nav> 
+            <div id="nav_menu">
+                    <div class="logo">
+                        <a href="#introdaction">
+        
+                        </a>
+                    </div>
+                    <ul class="menu_list">
+                        <li><a href="#introdaction" class="fancy_link">Home</a></li>
+                        <li><a href="#favorits" class="fancy_link">My Favorites</a></li>
+                        <li><a href="#about" class="fancy_link">Contact Info</a></li>
+                        <li><a href="https://signup.na.leagueoflegends.com/en/signup/index" class="fancy_link" target="blanck">Pley now</a></li>
+                    </ul>
+            </div>
+            <div id="mobile_nav_menu">
+                    <div class="logo">
+                        <a href="#introdaction" class="active"></a>
+                    </div>
+                        <div id="myLinks" class="menu_opened">
+                            <ul class="menu_list_mobile">
+                                <li><a href="#introdaction" class="mobile_link ">Home</a></li>
+                                <li><a href="#favorits" class="mobile_link">Favorits</a></li>
+                                <li><a href="#about" class="mobile_link">Contact Info</a></li>
+                                <li><a href="https://signup.na.leagueoflegends.com/en/signup/index" class="mobile_link">Pley now</a></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+                        <i class="fa fa-bars"></i>
+                        </a>
+            </div>
+        </nav>
+    </header>
+    <main id="grid_styling">
+        <section class="intro" id="introdaction">
+                <div class="content_for_intro"> 
+                    <img src="img/name.png" alt="">
+            </div>
+            <div class="scroll">
+                <a href="#favorits">  
+                    <i class="fa fa-angle-double-down fa-3x scroll_down"></i>
+                </a>
+            </div>
+            <video preload="auto" class="video_back" playsinline loop muted autoplay>
+                    <source src="img/back_vid.webm" type="video/webm">
+                    <source src="img/back_vid_two.mp4" type="video/mp4">
+            </video>
+        </section>
+        <section class="content" id="favorits"> 
+            <div class="container">
+                <div class="content_for_favorits">
+                    <div class="text_for_favorits">
+                        <h1>My Favorites</h1>
+                        <p>Whether you like to dive straight into the fray, support your teammates, or something in between, there’s a spot for you on the Rift.</p>
+                    </div>
+                    <div>
+                        <div class="favorits_content">
+                            <div class="wrapper">
+                                <div class="favorits_chemp_info">
+                                    <p class="divayder">Yasou</p>
+                                    <p>The Unforgiven</p>
+                                </div>
+                                <div class="favorits_chemp_img">
+                                    <img src="img/yasuo.png" alt="assassins" class="favorits_img" >
+                                    <a href="https://www.leagueoflegends.com/en-us/champions/yasuo/" target="blank" class="btn_lorn_more">Lorn more</a>
+                                </div>
+                                
+                            </div>
+                            <div class="wrapper">
+                                <div class="favorits_chemp_info">
+                                    <p class="divayder">Jinx</p>
+                                    <p>The Loose Cannon</p>
+                                </div>
+                                <div class="favorits_chemp_img">
+                                    <img src="img/jinx.png" alt="Fighters" class="favorits_img" >
+                                    <a href="https://www.leagueoflegends.com/en-us/champions/jinx/"  target="blank" class="btn_lorn_more">Lorn more</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+        </section>
+        <section class="contact_info" id="about">
+            <div class="container">
+                <div class="about_title">
+                    <h1>Contact Information</h1>
+                    <p class="about_title_text divayder ">Tell me how i can improve my skills</p>
+                </div>
+                <div class="my_map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.4457974900056!2d44.50824411524998!3d40.17689137939375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abcf9a866d9a9%3A0x9fbdd3e7ae412438!2s3%20Vazgen%20Sargsyan%20St%2C%20Yerevan%2C%20Armenia!5e0!3m2!1sen!2s!4v1592210855225!5m2!1sen!2s" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="form">
+                    <form  id="my_form" name="my_form_name">
+                      
+                        <ul class="form_list">
+                            <li class="valid">
+                               
+                                <input type="text" name="Name" required placeholder="Enter Name"  id="nameInput" class="input_castom">            
+                            </li>
+                            <li  class="valid">
+                                <input type="email" name="email"  placeholder="Enter Email" id="emailInput" class="input_castom" required>                   
+                            </li>
+                            <li  class="valid">
+                                <input type="tel" name="Phone" placeholder="Enter Phone Number"  id="phoneInput" class="input_castom"  pattern="[0-9]+" maxlength="9" required>
+                            </li>
+                            <li>
+                                <textarea class="input_castom" rows="5" placeholder="Enter Ypur Message" id="message" name="Message"></textarea>
+                            </li>
+                            <li>
+                                 <button type="#" value="#" id="submit" class="btn_lorn_more btn" >Submit</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+        <footer>
+            <div class="footer_info">
+                <ul class="footer_info_link">
+                    <li><a href="#">Infrmation Link</a></li>
+                    <li><a href="#">Infrmation Link</a></li>
+                    <li><a href="#">Infrmation Link</a></li>
+                </ul>
+            </div>
+            <div class="social_links">
+                <div><a href="#"><i class="fa fa-facebook-square fa-3x"></i></a></div>
+                <div><a href="#"><i class="fa fa-twitter-square fa-3x"></i></a></div>
+                <div><a href="#"><i class="fa fa-instagram fa-3x"></i></a></div>
+             
+            </div>
+        </footer>
+    
+    </main>
+    <script src="https://use.fontawesome.com/a31a3f8384.js"></script>
+    <script src="code.js"></script>
+   
+</body>
+
+</html>
